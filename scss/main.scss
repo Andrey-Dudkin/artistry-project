@@ -1,0 +1,64 @@
+@import "./blocks/./_header.scss";
+@import "./blocks/./_index.scss";
+@import "./blocks/./_footer.scss";
+@font-face{
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Book.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Demi.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+:root{
+    --main-font: "Futura PT", sans-serif;
+    --main-color: #000000;
+    --second-color: #ffffff;
+    --green-color: #a8af9c;
+	--light-color: #ecc99f;
+    --dots-color: #e5e8df;
+    --gradient-color: linear-gradient(144deg, #daa977 0%, #e3b373 16%,  #dea760 64%, #c3843e 82%, #af6b1f 100%);
+    --menu-icon-color: linear-gradient(144deg, #daa977 0%, #e3b373 16%,  #dea760 64%, #c3843e 82%, #af6b1f 100%);
+}
+body{
+    font-family: var(--main-font);
+    font-weight: 400;
+    color: var(--main-color);
+}
+.special_offer,
+.services,
+.our_works,
+.contact{
+    padding: 100px 0;
+}
+.container{
+    max-width: 1677px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container_section{
+    max-width: 1313px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title_section{
+    font-weight: 600;
+    font-size: 48px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.button_page{
+    font-size: clamp(20px, 3vw, 24px);
+    color: var(--second-color);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.hiden{
+    display: none;
+}

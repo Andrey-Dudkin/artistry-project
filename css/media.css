@@ -1,0 +1,294 @@
+@media(max-width: 1250px){
+    /* *services */
+    .tabs{
+        display: none;
+    }
+    .accordions{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .accordion{
+        display: block;
+    }
+    .accordion_control{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: var(--gradient-color);
+        background-size: 100% 1px;
+        background-position: 0 35px, 0 100%;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .accordion_title{
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+    .accordion_icon{
+        margin-right: 40px;
+    }
+    .accordion[open] .accordion_icon{
+        transform: rotate(-180deg)
+    }
+    .accordion_content{
+        margin-top: 40px;
+    }
+    .service_content {
+        width: 100%;
+        min-height: 45px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-right: 40px;
+    }
+    .service_content .title_service {
+        font-size: 16px;
+        line-height: 125%;
+    }
+    .service_content .price_service{
+        width: auto;
+        font-size: 16px;
+        line-height: 125%;
+    }
+
+    /* *our works */
+    .our_works_decoration_box{
+        width: 403px;
+        height: 467px;
+        top: 195px;
+    }
+    .our_works_container{
+        display: none;
+    }
+    .our_works_title{
+        width: auto;
+        text-align: left;
+        margin-bottom: 70px;
+    }
+    .slider{
+        display: block;
+        width: 100%;
+        min-height: 432px;
+    }
+    .slider_content{
+        max-width: 100%;
+        min-height: 550px;
+        margin-bottom: 53px;
+    }
+    .slider_content{
+        height: 432px;    
+    }
+    .slider_image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: 50% 50%;
+        animation-name: animationSlider;
+        animation-duration: 1s;
+        display: none;
+    }
+    .slider_umg_active{
+        display: block;
+    }
+    .dots_buttons{
+        display: flex;
+        justify-content: center;
+        column-gap: 21px;
+    }
+    .dot_button{
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: var(--dots-color);
+    }
+    .dot_button_active{
+        background-color: var(--green-color);
+    }
+    @keyframes animationSlider{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+@media(max-width: 1160px){
+    /* *contact */
+    .image_map{
+       display: none;
+    }
+    .image_map_mobile{
+        display: block;
+        width: 100%;
+        padding-top: 77px;
+    }
+}
+@media(max-width: 769px){
+    .special_offer,
+    .services,
+    .our_works,
+    .contact{
+        padding: 60px 0;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar_mobile{
+        display: block;
+    }
+    .navbar_mobile_content_top{
+        padding-top: 39px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    /* *burger menu */
+    .burger_menu_btn{
+        width: 30px;
+        height: 32px;
+        position: relative;
+        z-index: 20;
+    }
+    .burger_menu_icon{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        height: 3px;
+        background: var(--menu-icon-color);
+        transition: 300ms ease-in;
+    }
+    .burger_menu_icon::before,
+    .burger_menu_icon::after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: var(--menu-icon-color);
+        position: absolute;
+        transition: 300ms ease-in;
+    }
+    .burger_menu_icon::before{
+        top: 6px;
+    }
+    .burger_menu_icon::after{
+        bottom:  6px;
+    }
+    .burger_menu_icon.burger_menu_icon_active{
+        background: transparent;
+    
+    }
+    .burger_menu_icon.burger_menu_icon_active::before{
+        background: var(--second-color);
+        transform: rotate(-45deg);
+        top: 18px;
+    }
+    .burger_menu_icon.burger_menu_icon_active::after{
+        background: var(--second-color);
+        transform: rotate(45deg);
+        bottom: 12px;
+    }
+
+    /* *navbar mobile */
+    .navbar_mobile_content_main{
+        width: 100%;
+        min-height: 932px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        top: -1200px;
+        left: 0;
+        background-color: var(--green-color);
+        transition: all 1s ease-in;;
+    }
+    .logo{
+        text-align: center;
+    }
+    .menu_list {
+        flex-direction: column;
+        row-gap: 32px;
+        text-align: center;
+    }
+    .social_icons_header{
+        flex-direction: row;
+        column-gap: 30px;
+    }
+    .open_menu{
+        top: 0px;
+        transition: all 1s ease-in;
+    }
+    
+    /* *first screen */
+    .first_screen_container{
+        padding-top: 234px;
+    }
+    .first_screen_title{
+        width: 331px;
+        height: 76px;
+        margin-bottom: 0px;
+    }
+    .first_screen_subtitle {
+        width: 210px;
+        height: 15px;
+        margin-bottom: 260px;
+    }
+    .time_work{
+        display: block;
+        margin-bottom: 83px;
+    }
+    .first_screen_bottom_buttons {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .apply_for_a_bonus_card{
+        padding: 16px 0;
+    }
+
+    /* *special offer */
+    .special_offer_time_work{
+        display: none;
+    }
+    .special_offer_time_work .special_offer_text, .special_offer_discount .special_offer_text{
+        font-size: 16px;
+        margin-bottom: 18px;
+    }
+    .special_offer_discount .special_offer_text{
+        text-align: left;
+    }
+    .special_offer_decoration_box{
+        max-width: 415px;
+        height: 238px;
+        transform: rotate(180deg);
+        left: 0;
+        top: 22px;
+    }
+        
+    /* *contact */
+    .contact{
+        position: relative;
+    }
+    .contact_title {
+        margin-bottom: 37px;
+    }
+    .contact_address {
+        font-size: 16px;
+    }
+    .contact_phone {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+   
+    /* *footer */
+    .copywriting{
+        justify-content: center;
+    }
+    .copywriting .copywriting_text{
+        font-size: 16px;
+    }
+}
